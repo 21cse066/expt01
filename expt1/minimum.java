@@ -17,7 +17,7 @@ public class minimum {
         System.out.println("ENTER b:");
         int b = obj.nextInt();
         int min = (a<b)?a:b;
-        System.out.println("MINIMUM IS : "+a);
+        System.out.println("MINIMUM IS : "+min);
         
     }
     
