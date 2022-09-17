@@ -1,0 +1,35 @@
+package demo;
+
+
+public class Demo {
+
+   
+        
+    public void convertlmin(int hr1){
+       int m = hr1*60;
+       System.out.println("HOURS TO MINS : "+m);
+    }
+     public void convertlsec(int hr1){
+       int s = hr1*3600;
+       System.out.println("HOURS TO SECS : "+s);
+    }
+    public void converthm(double mins){
+        double h = mins/60;
+        System.out.println("MINS TO HOURS: "+h);      
+   
+}
+     public void converths(double secs){
+        double h1 = secs/3600;
+        System.out.println("SECS TO HOURS : "+h1);      
+   
+}
+
+   
+    public static void main(String[] args) {
+        
+        System.out.println("TIME CONVERTER");
+    }
+   
+    }
+   
+
