@@ -1,0 +1,11 @@
+package application1;
+
+public class GradeException extends Exception {
+
+    private final char s;
+
+    
+public GradeException(char s) {
+     this.s = s;
+}
+}
