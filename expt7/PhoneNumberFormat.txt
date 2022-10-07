@@ -1,0 +1,31 @@
+import java.util.*;
+public class PhoneNumberFormat {
+    public static void main(String[] args) {
+     Scanner obj=new Scanner(System.in);
+     String phno= "";
+     String fphno="";
+     while(true){
+   
+        System.out.println("Enter phone number: ");
+        phno=obj.nextLine();
+         if(phno.equalsIgnoreCase("999"))
+          System.exit(0);
+
+         if(phno.length() < 10)
+
+         System.out.println("Invalid phone number .");
+
+         else {
+
+          fphno+= "(" + phno.substring(0, 3)+ ")" + phno.substring(3, 6)+"-"+phno.substring(6, phno.length());
+
+          System.out.println(fphno);
+
+           }
+
+       }
+
+     }
+
+   }
+
