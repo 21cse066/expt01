@@ -50,7 +50,7 @@ class Logic
 	}
 }
 
-class MyThread1 implements Runnable
+class MyThread1 extends Thread
 {
 	Logic l;
 	MyThread1(Logic l)
@@ -64,7 +64,7 @@ class MyThread1 implements Runnable
 }
 
 
-class MyThread2 implements Runnable
+class MyThread2 extends Thread
 {
 	Logic l;
 	MyThread2(Logic l)
@@ -78,7 +78,7 @@ class MyThread2 implements Runnable
 	}
 }
 
-class MyThread3 implements Runnable
+class MyThread3 extends Thread
 {
 	
 	Logic l;
