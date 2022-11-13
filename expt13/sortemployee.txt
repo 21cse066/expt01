@@ -1,4 +1,4 @@
-package testingdb;
+package testing;
 
 import java.util.ArrayList;
 import java.util.Collections;
