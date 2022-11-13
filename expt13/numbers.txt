@@ -1,0 +1,46 @@
+package testing;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Collections;
+
+public class testArrayList {        
+
+    public static void main(String[] args) {
+
+        Scanner inputs = new Scanner(System.in);
+        ArrayList <Integer> nums = new ArrayList<Integer>();
+        ArrayList <Integer> even = new ArrayList<Integer>();
+        ArrayList <Integer> odd = new ArrayList<Integer>();
+        System.out.println("Enter a number(-1 to end): ");
+       while(inputs.hasNextInt()) {
+    int num = inputs.nextInt();
+    if (num == -1) {
+        break;
+    }
+    nums.add(num);
+}
+System.out.println(nums);
+ int sum =0;
+for (int i : nums)   
+{  
+sum+=i;  
+}  
+System.out.println("The average of the List is: " + sum/(float)nums.size());  
+System.out.println("Minimum Element in ArrayList = "
+                           + Collections.min(nums));
+System.out.println("Maximum Element in ArrayList = "
+                           + Collections.max(nums));
+for (int i = 0; i < nums.size(); i++) {
+ int n = nums.get(i);
+ if (n % 2 == 0) {
+ even.add(n);
+ } 
+ else{
+     odd.add(n);
+ }
+}
+System.out.println("filter even numbers in list : "+even);
+System.out.println("odd numbers in list : "+odd);
+    }
+}
