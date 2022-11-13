@@ -1,34 +1,10 @@
 package testing;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
-class Employee implements Comparable<Employee> {
-    String name;
-    Integer salary;
-   
- 
-    public Employee(String n, Integer f) {
-           name = n;
-           salary = f;
-           
-    }
- 
-    public String toString() {
-           return "\n name=" + name + ",salary=" + salary ;
-    }
- 
-    public int compareTo(Employee o) {
-           return o.name.compareTo(this.name);
-    }
-}
- 
-public class SortEmployee {
- 
+public class emp {
     public static void main(String[] args) {
- 
-           Employee e1 = new Employee("ank", 2000);
+         Employee e1 = new Employee("ank", 2000);
            Employee e2 = new Employee("dav", 500);
            Employee e3 = new Employee("banu", 1000);
            Employee e4 = new Employee("sam", 9000);
@@ -70,11 +46,33 @@ public class SortEmployee {
            l.add(e18);
            l.add(e19);
            l.add(e20);
- 
-           Collections.sort(l); // SORT
- 
-           System.out.println(l); // Display list
- 
+        Collections.sort(l, new sorting());
+        System.out.println(l);
+        }
+        
     }
+
+class Employee
+{
+    String name;
+    Integer salary;
+   
  
+    public Employee(String n, Integer f) {
+           name = n;
+           salary = f;
+           
+    }
+    public String toString() {
+           return "\n name=" + name + ",salary=" + salary ;
+    }
+    
+}
+
+class sorting implements Comparator<Employee>
+{
+    public int compare(Employee s1,Employee s2)
+    {
+        return s2.name.compareTo(s1.name);
+    }
 }
